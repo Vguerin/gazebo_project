@@ -12,7 +12,7 @@ int compteur =0;
 void odom_callback(const nav_msgs::Odometry odom)
 {
 
-   if ((ceil(odom.pose.pose.position.x*10)/10 == -8.3 && compteur==0)|| (ceil(odom.pose.pose.position.x*10)/10 == -5.3 && compteur==1)) {
+   if ((ceil(odom.pose.pose.position.x*10)/10 == -8.3 && compteur==0)|| (ceil(odom.pose.pose.position.x*10)/10 == -5.1 && compteur==1)) {
     visualization_msgs::Marker marker;
     // Set the frame ID and timestamp.  See the TF tutorials for information on these.
     marker.header.frame_id = "base_footprint";
